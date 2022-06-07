@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>飞机大战 | wzx游戏中心</title>
+		<link rel="shortcut icon" href="icon.png">
+		<link rel="stylesheet" href="css/reset.css" />
+<script>
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
+</script>
+	</head>
+	<body>
+<!--
+        	游戏名：飞机大战
+        	描述：js用的es5语法，兼容大部分浏览器
+	备注：游戏资源来源于网络，如有侵权请联系站长删除！
+        	玩法：
+	1、支持上下左右键控制飞机移动，空格键暂停/继续
+	2、支持飞机跟随鼠标移动
+	3、支持移动端
+ -->
+		<canvas id="canvas"></canvas>
+		<script type="text/javascript" src="system/Tools.js" ></script>
+		<script type="text/javascript" src="property/Frame.js" ></script>
+		<script type="text/javascript" src="js/BackGround.js" ></script>
+		<script type="text/javascript" src="js/Bomb.js" ></script>
+		<script type="text/javascript" src="js/MyPlane.js" ></script>
+		<script type="text/javascript" src="js/Bullet.js" ></script>
+		<script type="text/javascript" src="js/EnemyPlane.js" ></script>
+		<script type="text/javascript" src="js/GameStart.js" ></script>
+		<script>
+			window.onload = function(){
+				//禁用移动端浏览器页面的上下拖拽
+				document.body.addEventListener('touchmove',function(e){e.preventDefault()},false);
+				//开始游戏
+				new GameStart();
+			}
+		</script>
+	</body>
+</html>
