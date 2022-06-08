@@ -5,7 +5,7 @@
 	标题：wzx游戏中心
 	描述：资源来源于网络，如有侵权请联系站长删除！
 	鸣谢：咖啡吧导航（官网：https://ops-coffee.cn）
-	源代码来源自咖啡吧导航，根据开源协议进行了一些改动。
+	源代码来源自咖啡吧导航，根据开源协议进行了二次开发。
 -->
 <head>
   <meta charset="UTF-8">
@@ -18,22 +18,27 @@
   <link rel="stylesheet" href="css/nav.css" type="text/css" />
   <title>wzx游戏中心</title>
   <link rel="shortcut icon" href="favicon.ico" />
+<script>
+  // 判断非本机且未使用 https 时，强制重定向到 https。
+  if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
+      window.location = window.location.toString().replace(/^http:/, "https:");
+</script>
   <!-- Analytics -->
   <script>
   	!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
   </script>
 </head>
 
-<body data-rsssl=1>
+<body data-rsssl=1 style="background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://www.dmoe.cc/random.php);">
   <div class="header">
     <div class="container">
       <a class="site" href="/">wzx</a>
       <nav class="header-menu">
         <ul>
-          <li class=""><a href="https://website-pages.github.io/" target="_blank">wzx</a></li>
-          <li class=""><a href="https://website-pages.github.io/link" target="_blank">wzx网址导航</a></li>
-          <li class="current-menu-item"><a href="https://website-pages.github.io/game" target="_blank">wzx游戏中心</a></li>
-          <li class=""><a href="https://website-pages.github.io/post/about" target="_blank">关于</a></li>
+          <li class=""><a href="/" target="_blank">wzx</a></li>
+          <li class=""><a href="/link" target="_blank">wzx网址导航</a></li>
+          <li class="current-menu-item"><a href="/game" target="_blank">wzx游戏中心</a></li>
+          <li class=""><a href="/post/about" target="_blank">关于</a></li>
           <li class=""><a href="https://github.com/website-pages" target="_blank">GitHub</a></li>
         </ul>
       </nav>
@@ -46,111 +51,111 @@
       <div class="nav-cell clearfix">
         <ul class="nav-list">
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/snake" target="_blank">
+            <a class="nav-item clearfix" href="snake" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/snake/icon.png);">
+                style="margin-bottom:40px;background-image: url(snake/icon.png);">
               </div>
               <div class="nav-name">经典贪吃蛇</div>
-              <p></p>
+              <p>网页版贪吃蛇小游戏，键盘方向键操作，空格键暂停/继续</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/solitaire" target="_blank">
+            <a class="nav-item clearfix" href="solitaire" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/solitaire/icon.png);">
+                style="margin-bottom:40px;background-image: url(solitaire/icon.png);">
               </div>
               <div class="nav-name">蜘蛛纸牌</div>
-              <p></p>
+              <p>一款经典卡牌游戏，使用鼠标操作，三种难度可选</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/viking" target="_blank">
+            <a class="nav-item clearfix" href="viking" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/viking/icon.png);">
+                style="margin-bottom:40px;background-image: url(viking/icon.png);">
               </div>
               <div class="nav-name">维京战争</div>
-              <p></p>
+              <p>超好玩的卡片战争游戏，可以自定义卡片</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/cube" target="_blank">
+            <a class="nav-item clearfix" href="cube" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/cube/icon.png);">
+                style="margin-bottom:40px;background-image: url(cube/icon.png);">
               </div>
               <div class="nav-name">3D魔方</div>
-              <p></p>
+              <p>立体三阶魔方在线还原，使用鼠标操作</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/plane" target="_blank">
+            <a class="nav-item clearfix" href="plane" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/plane/icon.png);">
+                style="margin-bottom:40px;background-image: url(plane/icon.png);">
               </div>
               <div class="nav-name">飞机大战</div>
-              <p></p>
+              <p>射击游戏，自动发射子弹，使用鼠标操作</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/2048" target="_blank">
+            <a class="nav-item clearfix" href="2048" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/2048/icon.png);">
+                style="margin-bottom:40px;background-image: url(2048/icon.png);">
               </div>
               <div class="nav-name">2048</div>
-              <p></p>
+              <p>数字合并游戏，键盘方向键操作，四种难度可选</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/tetris" target="_blank">
+            <a class="nav-item clearfix" href="tetris" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/tetris/icon.png);">
+                style="margin-bottom:40px;background-image: url(tetris/icon.png);">
               </div>
               <div class="nav-name">俄罗斯方块</div>
-              <p></p>
+              <p>经典益智游戏，键盘方向键操作，注意安排布局</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/battle" target="_blank">
+            <a class="nav-item clearfix" href="battle" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/battle/icon.png);">
+                style="margin-bottom:40px;background-image: url(battle/icon.png);">
               </div>
               <div class="nav-name">坦克大战</div>
-              <p></p>
+              <p>可切换单人/双人模式的一款射击游戏</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/minesweeper" target="_blank">
+            <a class="nav-item clearfix" href="minesweeper" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/minesweeper/icon.png);">
+                style="margin-bottom:40px;background-image: url(minesweeper/icon.png);">
               </div>
               <div class="nav-name">经典扫雷</div>
-              <p></p>
+              <p>经典游戏高度还原，三种难度可选，支持自定义</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/pacman" target="_blank">
+            <a class="nav-item clearfix" href="pacman" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/pacman/icon.png);">
+                style="margin-bottom:40px;background-image: url(pacman/icon.png);">
               </div>
               <div class="nav-name">吃豆人</div>
-              <p></p>
+              <p>键盘方向键操作，空格键暂停/继续</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/diglett" target="_blank">
+            <a class="nav-item clearfix" href="diglett" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/diglett/icon.png);">
+                style="margin-bottom:40px;background-image: url(diglett/icon.png);">
               </div>
               <div class="nav-name">打地鼠</div>
-              <p></p>
+              <p>休闲小游戏，使用鼠标操作</p>
             </a>
           </li>
           <li>
-            <a class="nav-item clearfix" href="https://website-pages.github.io/game/dailypop" target="_blank">
+            <a class="nav-item clearfix" href="dailypop" target="_blank">
               <div class="nav-img"
-                style="margin-bottom:40px;background-image: url(https://website-pages.github.io/game/dailypop/icon.png);">
+                style="margin-bottom:40px;background-image: url(dailypop/icon.png);">
               </div>
               <div class="nav-name">天天消消乐</div>
-              <p></p>
+              <p>一款经典的三消游戏，使用鼠标操作</p>
             </a>
           </li>
         </ul>
@@ -162,8 +167,8 @@
   <footer class="footer">
     <div class="container clearfix">
       <div class="copy">
-      	 版权所有©2021-2022 <a href="https://website-pages.github.io/game">wzx游戏中心</a>，保留一切权利。
-      	 <br/>Powered by <a href="https://website-pages.github.io/go?url=https://github.com/website-pages" target="_blank">website-pages</a>.
+      	 版权所有©2021-2022 <a href="/game">wzx游戏中心</a>，保留一切权利。
+      	 <br/>Powered by <a href="/go?url=https://github.com/website-pages" target="_blank">website-pages</a>.
       </div>
       <div class="link">
         <a href="/" target="_blank">wzx个人网站&博客</a>
@@ -172,6 +177,21 @@
   </footer>
 
   <script src="js/nav.js"></script>
+
+  <!--Gitter公共聊天室-->
+  <style>
+  .gitter-open-chat-button {
+    right: auto !important;
+    left: 10px !important;
+  }
+  </style>
+  <script data-name="gitter">
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'website-pages-github-io/chatroom'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
 </body>
 <!--
 	wzx游戏中心 出品。©版权所有，未经书面许可严禁复制、转载！
