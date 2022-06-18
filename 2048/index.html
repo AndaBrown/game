@@ -5,6 +5,12 @@
 <link rel="shortcut icon" href="icon.png">
 <link rel="stylesheet" href="css/fiame.css" />
 
+<script>
+    // 判断非本机且未使用 https 时，强制重定向到 https。
+    if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
+        window.location = window.location.toString().replace(/^http:/, "https:");
+</script>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/quietflow.min.js"></script>
 <script type="text/javascript" src="js/frame.js"></script>

@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<title>俄罗斯方块 | wzx游戏中心</title>
 	<link rel="shortcut icon" href="icon.png">
+<script>
+    // 判断非本机且未使用 https 时，强制重定向到 https。
+    if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
+        window.location = window.location.toString().replace(/^http:/, "https:");
+</script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.black.css">
 	<link rel="stylesheet" type="text/css" href="css/4.css">
 <script>

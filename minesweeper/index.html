@@ -6,6 +6,13 @@
 <title>经典扫雷 | wzx游戏中心</title>
     <!--标题栏-->
     <link rel="icon" href="icon.png" type="image/x-icon">
+
+<script>
+    // 判断非本机且未使用 https 时，强制重定向到 https。
+    if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
+        window.location = window.location.toString().replace(/^http:/, "https:");
+</script>
+
     <!--收藏夹-->
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="minesweeper/cssfile.css" />
