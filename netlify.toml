@@ -23,7 +23,7 @@
   force = true
 
 [[redirects]]
-  from = "/post/abput"
+  from = "/post/about"
   to = "https://imwzx.netlify.app/post/about"
   status = 301
   force = true
