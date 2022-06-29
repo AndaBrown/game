@@ -1,10 +1,4 @@
 [[redirects]]
-  from = "/"
-  to = "https://imwzx.netlify.app/404"
-  status = 404
-  force = true
-
-[[redirects]]
   from = "/link"
   to = "https://imwzx.netlify.app/link"
   status = 301
