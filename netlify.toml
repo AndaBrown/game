@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/home"
-  to = "https://imwzx.netlify.app/"
+  to = "https://imwzx.netlify.app/home"
   status = 301
   force = true
 
