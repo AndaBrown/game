@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/"
+  to = "https://imwzx.netlify.app/game"
+  status = 200
+  force = true
