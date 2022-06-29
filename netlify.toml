@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "https://imwzx.netlify.app/*"
+  status = 301
+  force = true
