@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/"
-  to = "https://imwzx.netlify.app/game"
+  from = "https://imwzx.netlify.app/game"
+  to = "/"
   status = 200
   force = true
