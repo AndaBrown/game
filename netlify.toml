@@ -1,5 +1,29 @@
 [[redirects]]
-  from = "/*"
-  to = "https://imwzx.netlify.app/*"
+  from = "/"
+  to = "https://imwzx.netlify.app/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/link"
+  to = "https://imwzx.netlify.app/link"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/game"
+  to = "https://imwzx.netlify.app/game"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/go"
+  to = "https://imwzx.netlify.app/go"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/post"
+  to = "https://imwzx.netlify.app/post"
   status = 301
   force = true
