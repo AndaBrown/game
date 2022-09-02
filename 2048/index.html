@@ -1,20 +1,23 @@
-﻿<html>
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8" />
-<title>2048 | wzx游戏中心</title>
-<link rel="shortcut icon" href="icon.png">
-<link rel="stylesheet" href="css/fiame.css" />
-
+  <meta charset="utf-8">
+  <title>2048 | wzx游戏中心</title>
 <script>
     // 判断非本机且未使用 https 时，强制重定向到 https。
     if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
         window.location = window.location.toString().replace(/^http:/, "https:");
 </script>
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/quietflow.min.js"></script>
-<script type="text/javascript" src="js/frame.js"></script>
-
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="icon.png">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 <!--51LA-->
 <script>
   !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
@@ -42,125 +45,72 @@
 
 </head>
 <body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
 
-<section id="section1">
-	<h1>2048:wsad控制方向</h1>
-	<h2 class="h2_1">得--分</h2>
-	<h2 class="h2">模式选择:</h2>
-	<div id="game">
-	</div>
-	<div class="head clear">
-		<div class="scoreShow left">
-			<span>Score:</span>
-			<!--分数栏-->
-			<span id="score"></span>
-		</div>
-		<div class="selction right" onClick="getModel(event)">
-			<a href="#" class="model" value="3">3X3</a>
-			<a href="#" class="model" value="4">4X4</a>
-			<a href="#" class="model" type="button">5X5</a>
-			<a href="#" class="model" type="button">6X6</a>
-		</div>
-	</div>
-	<div id="gridPanel"></div>
-	<div id="gameover">
-		<h1 id="Score"></h1>
-		<a href="#" id="again" onClick="obj.gameStart()">Try again</a>
-	</div>
-	<div class="button">
-		<button class="button1 button2" id="buton1">上</button>
-		<button class="button1" id="buton2">左</button>
-		<button class="button1" id="buton3">下</button>
-		<button class="button1" id="buton4">右</button>
-	</div>
-</section>
-<audio src="MP3/winner.mp3" id="winner" controls   hidden="true">
-<audio src="MP3/512.mp3"    id="a512" controls    hidden="true">
-<audio src="MP3/lose.mp3"    id="lose" controls    hidden="true">
-<audio src="MP3/2.mp3"      id="a2" controls      hidden="true">
-<audio src="MP3/1024.mp3"   id="a1024" controls   hidden="true">
+    <div class="above-game">
+      <p class="game-intro">合并数字获得 <strong>2048</strong> 方块！</p>
+      <a class="restart-button">新游戏</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">继续游戏</a>
+          <a class="retry-button">重新开始</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
 </body>
-<!--  <script language="javascript" type="text/javascript">
-        function autoPlay() {
-            var myAuto = document.getElementById('myaudio');
-            myAuto.play();
-        }
-        function closePlay() {
-            var myAuto = document.getElementById('myaudio');
-            myAuto.pause();
-            myAuto.load();
-        }
- </script> -->
-<script>
-$(function() {
-    // body... 
-    function unScroll() {
-    var top = $(document).scrollTop();
-    $(document).on('scroll.unable',function (e) {
-        $(document).scrollTop(top);
-    })
-    }
-    unScroll();
-    var random = Math.floor(Math.random() * (7 - 0 + 1) + 0);
-    console.log(random);
-    switch (random) {
-        case 0:
-            bouncingBalls();
-            break;
-        case 1:
-            starfield();
-            break;
-        case 2:
-            vortex();
-            break;
-        case 3:
-            shootingLines();
-            break;
-        default:
-            simpleGradient();
-            break;
-    }
-    function bouncingBalls(argument) {
-        $("body").quietflow({
-            theme: "bouncingBalls",
-            specificColors: [
-                "rgba(255, 10, 50, .5)",
-                "rgba(10, 255, 50, .5)",
-                "rgba(10, 50, 255, .5)",
-                "rgba(0, 0, 0, .5)"
-            ]
-        })
-    }
-
-    function simpleGradient(argument) {
-        $("body").quietflow({
-            theme: "simpleGradient",
-            primary: "#B066FE",
-            accent: "#63E2FF"
-        })
-    }
-
-    function starfield() {
-        $("body").quietflow({
-            theme: "starfield"
-        })
-    }
-
-    function vortex() {
-        $("body").quietflow({
-            theme: "vortex",
-            miniRadii: 40
-        })
-    }
-
-    function shootingLines() {
-        $("body").quietflow({
-            theme: "shootingLines",
-            backgroundCol: "#141C26",
-            lineColor: "#05E0E0",
-            lineGlow: "#00ff00"
-        })
-    }
-})
-</script>
 </html>
