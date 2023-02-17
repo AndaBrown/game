@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<!--
-	作者：website-pages
-	标题：wzx游戏中心
-	描述：资源来源于网络，如有侵权请联系站长删除！
-	鸣谢：咖啡吧导航（官网：https://ops-coffee.cn）
-	源代码来源自咖啡吧导航，根据开源协议进行了一些改动。
--->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="applicable-device" content="pc,mobile">
-  <meta name="keywords" content="wzx游戏中心" />
-  <meta name="description" content="wzx游戏中心" />
+  <meta name="applicable-device" content="pc,mobile" />
+  <meta name="author" content="Auriel" />
+  <meta name="description" content="Aurielの小游戏,在线小游戏,HTML5游戏,小游戏在线玩" />
+  <meta name="keywords" content="Auriel,小游戏,在线小游戏,HTML5游戏,网页游戏,小游戏在线玩,益智小游戏,休闲小游戏,Online Mini Games,auriel.top" />
   <link rel="stylesheet" href="css/nav.css" type="text/css" />
-  <title>wzx游戏中心</title>
+  <title>Aurielの小游戏</title>
   <link rel="shortcut icon" href="favicon.ico" />
-<script>
-  // 判断非本机且未使用 https 时，强制重定向到 https。
-  if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
-      window.location = window.location.toString().replace(/^http:/, "https:");
-</script>
-
-<!--51LA-->
-<script>
-  !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
-</script>
-<!--灵雀-->
-<script>
-  !(function(c,i,e,b){
-  var h=i.createElement("script");
-  var f=i.getElementsByTagName("script")[0];
-  h.type="text/javascript";
-  h.crossorigin=true;
-  h.onload=function(){new c[b]["Monitor"]().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true,ignoreVendor:false});};
-  f.parentNode.insertBefore(h,f);h.src=e;})(window,document,"https://sdk.51.la/perf/js-sdk-perf.min.js","LingQue");
-</script>
-<!--百度-->
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?79bf7c0fda66b8c7343c49d5adf9a3fb";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
-
+  <!--Google Analytics(gtag)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVK0S6H59D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WVK0S6H59D');
+  </script>
+  <!--Microsoft Clarity-->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "fu11495sl7");
+  </script>
+  <!--百度统计-->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?6f06504e0effd8ada0d6de8da7cdb9c1";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <!--51LA统计-->
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"})</script>
+  <!--灵雀应用监控-->
+  <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+  <script>
+    new LingQue.Monitor().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true});
+  </script>
 </head>
 
-<body data-rsssl=1 style="background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://www.dmoe.cc/random.php);">
+<body data-rsssl=1 style="background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://api.ixiaowai.cn/api/api.php);">
   <!--背景遮罩开始-->
   <style>
     .bg-cover{
@@ -66,13 +63,10 @@
   <!--背景遮罩结束-->
   <div class="header">
     <div class="container">
-      <a class="site" href="/">wzx</a>
+      <a class="site" href="/">Aurielの小游戏</a>
       <nav class="header-menu">
         <ul>
-          <li class=""><a href="https://wzx.is-a.dev/" target="_blank">个人主页</a></li>
-          <li class=""><a href="https://wzx.js.cool/" target="_blank">博客站点</a></li>
-          <li class=""><a href="https://wzxn.js.cool/" target="_blank">网址导航</a></li>
-          <li class="current-menu-item"><a href="https://wzxg.js.cool/">游戏中心</a></li>
+          <li class=""><a href="https://www.auriel.top/" target="_blank">返回主页</a></li>
         </ul>
       </nav>
     </div>
@@ -200,20 +194,11 @@
   <footer class="footer">
     <div class="container clearfix">
       <div class="copy">
-      	 版权所有©2021-2022 <a href="/">wzx游戏中心</a>，保留一切权利。
-      	 <br/>Powered by <a href="https://github.com/website-pages" target="_blank">website-pages</a>.
-      </div>
-      <div class="link">
-        <a href="https://wzx.is-a.dev/" target="_blank">wzx个人主页</a>
+      	 Powered By <a href="/">Aurielの小游戏</a>.
       </div>
     </div>
   </footer>
 
   <script src="js/nav.js"></script>
 </body>
-<!--
-	wzx游戏中心 出品。©版权所有，未经书面许可严禁复制、转载！
-	网址：https://wzxg.js.cool/
-	再次鸣谢咖啡吧导航！
--->
 </html>
