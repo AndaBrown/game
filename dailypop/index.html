@@ -43,6 +43,12 @@
 <script>
   new LingQue.Monitor().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true});
 </script>
+<script>
+  /* Only register a service worker if it's supported */
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js');
+  }
+</script>
 </head>
 
 <body>

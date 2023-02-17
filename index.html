@@ -46,6 +46,12 @@
   <script>
     new LingQue.Monitor().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true});
   </script>
+  <script>
+    /* Only register a service worker if it's supported */
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
 </head>
 
 <body data-rsssl=1 style="background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://api.ixiaowai.cn/api/api.php);">
